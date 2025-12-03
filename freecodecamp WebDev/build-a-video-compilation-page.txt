@@ -1,0 +1,44 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+<main>
+    <h1>Learning javascript !</h1>
+    <p>in this page, we'll provide you with some of the most important resources to learn javascript efficiently</p>
+
+    <section>
+        <h2>JavaScript Crash Course for Beginners</h2>
+        <p>A clear, fast-paced introduction to JavaScript fundamentals.</p>
+        <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" title="JavaScript Crash Course for Beginners" height="315" width="560">
+        </iframe>
+    </section>
+
+    <section>
+        <h2>JavaScript Tutorial (Full Course)</h2>
+        <p>A full, in-depth course that walks through the language step by step.</p>
+        <iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" title="JavaScript Full Course" height="315" width="560">
+        </iframe>
+    </section>
+
+    <section>
+        <h2>DOM Manipulation Tutorial</h2>
+        <p>Learn how to interact with the page using the Document Object Model.</p>
+        <iframe src="https://www.youtube.com/embed/0ik6X4DJKCc" title="DOM Manipulation Course" height="315" width="560">
+        </iframe>
+    </section>
+
+</main>
+</body>
+
+</html>
+
+
+** end of index.html **
+

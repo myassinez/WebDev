@@ -1,0 +1,33 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Garlic Butter Pasta</title>
+</head>
+<body>
+  <h1>Garlic Butter Pasta</h1>
+  <p>A quick, tasty pasta dish you can throw together in minutes using simple ingredients.</p>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>200g spaghetti</li>
+    <li>3 cloves garlic, minced</li>
+    <li>3 tbsp butter</li>
+    <li>Salt and black pepper to taste</li>
+  </ul>
+  <h2>Instructions</h2>
+  <ol>
+    <li>Boil the spaghetti in salted water until al dente.</li>
+    <li>In a pan, melt the butter and sauté the garlic until fragrant.</li>
+    <li>Drain the pasta and toss it into the pan with the garlic butter.</li>
+    <li>Season with salt and black pepper, then serve warm.</li>
+  </ol>
+  
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="A plate of pasta">
+</body>
+</html>
+
+
+** end of index.html **
+

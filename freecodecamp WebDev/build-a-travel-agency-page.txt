@@ -1,0 +1,37 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Agency Page</title>
+    <meta name="description" content="this is the best Travel Agency">
+  </head>
+  <body>
+    <h1>Yassine's Travel Agency</h1>
+    <p>Our Travel Agency offers a lot of traveling opportunities, to more than 100 countries worldwide, explore the beauty of our planet with us, and get the most out of ur vacancy</p>
+    <h2>Packages</h2>
+    <p>we have a lot of packages, such as :</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <h2>Top Itineraries</h2>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="colosseo"></img></a>
+    <figcaption>Colosseo is the top selected destination</figcaption>
+    </figure>
+        <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="alps"></img></a>
+    <figcaption>The Alps are considered the second most top</figcaption>
+    </figure>
+        <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="sea"></img></a>
+    <figcaption>While this famous beach fall just a little behind the Alps</figcaption>
+    </figure>
+  </body>
+</html>
+
+** end of index.html **
+
