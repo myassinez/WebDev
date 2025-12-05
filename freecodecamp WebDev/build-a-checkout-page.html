@@ -1,0 +1,64 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+
+<h1>Checkout</h1>
+<!-- <p>Review your selected item and enter your payment details to finish your order.</p> -->
+
+<section>
+    <h2>Your Cart</h2>
+    <p>You currently have one product ready for checkout.</p>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Sample product image">
+
+    <p>Item: Rubik's Cube</p>
+    <p>Quantity: 1</p>
+    <p>Total: $18.50</p>
+</section>
+
+<section>
+    <h2>Payment Information</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <label for="card-name">Name on Card</label>
+            <input id="card-name" name="card-name" type="text">
+
+            <label for="card-number">Card Number</label>
+            <input id="card-number" name="card-number" type="text" aria-describedby="card-number-help">
+            <p id="card-number-help">Enter a 16 digit number without spaces.</p>
+
+            <label for="expiry-date">
+                Expiry Date <span aria-hidden="true">*</span>
+            </label>
+            <input required id="expiry-date" name="expiry-date" type="text">
+
+            <label for="cvv">
+                CVV <span aria-hidden="true">*</span>
+            </label>
+            <input required id="cvv" name="cvv" type="text">
+
+        </fieldset>
+
+    </form>
+
+</section>
+
+</body>
+
+</html>
+
+
+** end of index.html **
+
