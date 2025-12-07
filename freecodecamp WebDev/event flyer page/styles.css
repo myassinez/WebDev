@@ -1,0 +1,45 @@
+body {
+  padding: 50px 0;
+  margin: 0;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 100px);
+  font-family: Arial;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.8rem; /* smaller titles that imgs width ?  */
+  margin: 0;
+}
+
+hr {
+  width: 60%;
+}
+
+section {
+  width: 100%;
+}
+
+section h2 {
+  font-size: 1.3rem; /* 1.4rem ? */
+  margin-bottom: 10px;
+  color: #444;
+}
+
+p {
+  margin: 0;
+  font-size: 0.95rem;
+}
