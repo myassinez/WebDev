@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Selection Feature Page</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+input[type="checkbox"]{
+  appearance: none;
+  border: 1px solid grey;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked{
+  background-color: orange;
+  border-color: lightgrey;
+  display: inline-block;
+}
+
+
+input[type="checkbox"]:checked::after{
+  content: "✓";
+  text-align: center;
+  display: block;
+}
+
+body{
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.feature-card-container{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.feature-card{
+  border: 2px solid grey;
+  display: inline-block;
+  width: 30vw;
+  height: 15vh;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 20px
+}
+
+label{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+</style>
+
+</head>
+
+<body>
+    <h1>Feature Selection</h1>
+    <div class="feature-card-container">
+        <label class="feature-card">Smart Backup Scheduler<p>Automatically backs up your files</p><input type="checkbox"></label>
+        <label class="feature-card">Real-Time Performance Monitor<p>Tracks system load, usage spikes, and app performance</p><input type="checkbox"></label>
+        <label class="feature-card">Secure Vault Encryption<p>Stores your files in a double-encrypted private vault.</p><input type="checkbox"></label>
+        <label class="feature-card">Offline Sync Mode<p>Work without internet and everything syncs the moment you reconnect.</p><input type="checkbox"></label>
+        <label class="feature-card">Task Automation Rules<p>Automating repetitive actions</p><input type="checkbox"></label>
+        <label class="feature-card">Version Snapshots<p>Restore any file or project to an older version from the timeline history.</p><input type="checkbox"></label>
+    </div>
+</body>
+</html>
