@@ -1,0 +1,348 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-content">
+      <a href="#welcome-section" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hello, I'm a Web Developer</h1>
+    <p class="welcome-text">I create responsive websites and applications with clean code and modern design principles.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+      <div class="project-tile">
+        <div class="project-img">Tribute Page Preview</div>
+        <div class="project-title">
+          Tribute Page Project
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+      
+      <div class="project-tile">
+        <div class="project-img">Random Quote Machine</div>
+        <div class="project-title">
+          Quote Generator
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+      
+      <div class="project-tile">
+        <div class="project-img">JavaScript Calculator</div>
+        <div class="project-title">
+          Interactive Calculator
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2 class="contact-title">Let's Work Together</h2>
+    <p class="contact-subtitle">Interested in collaborating on a project?</p>
+    
+    <div class="contact-links">
+      <a 
+        id="profile-link" 
+        href="https://github.com/myassinez" 
+        target="_blank"
+      >
+        Visit My GitHub Profile
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>Created as a learning project for freeCodeCamp</p>
+    <p style="margin-top: 10px; opacity: 0.8; what else ?">© 2025 | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+      --teal: #2a9d8f;
+      --dark-teal: #1d7873;
+      --orange: #e76f51;
+      --light-orange: #f4a261;
+      --dark: #264653;
+      --light: #f8f9fa;
+      --gray: #495057;
+    }
+    
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+    
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--dark);
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 20px;
+    }
+    
+    .nav-link {
+      color: var(--light);
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+      padding: 5px 10px;
+      transition: all 0.3s;
+    }
+    
+    .nav-link:hover {
+      color: var(--light-orange);
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+    
+    #welcome-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--teal) 100%);
+      text-align: center;
+      padding: 80px 20px 40px;
+      color: var(--light);
+    }
+    
+    #welcome-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: var(--light-orange);
+    }
+    
+    .welcome-text {
+      font-size: 1.8rem;
+      max-width: 600px;
+      margin-top: 10px;
+      color: rgba(255,255,255,0.9);
+    }
+    
+    #projects {
+      padding: 80px 20px;
+      background-color: var(--light);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: var(--dark);
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background-color: var(--orange);
+    }
+    
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .project-tile {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 350px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .project-tile:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    
+    .project-img {
+      height: 200px;
+      background-color: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+    
+    .project-title {
+      padding: 20px;
+      font-size: 1.3rem;
+      color: var(--dark);
+    }
+    
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    .project-link:hover {
+      color: var(--dark-teal);
+    }
+    
+    .contact-section {
+      padding: 80px 20px;
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+    }
+    
+    .contact-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--light-orange);
+    }
+    
+    .contact-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+    
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    #profile-link {
+      display: inline-block;
+      background-color: var(--orange);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    
+    #profile-link:hover {
+      background-color: var(--light-orange);
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @media (max-width: 768px) {
+      #navbar {
+        padding: 10px 0;
+      }
+      
+      .nav-content {
+        justify-content: center;
+      }
+      
+      .nav-link {
+        margin: 0 15px;
+        font-size: 16px;
+      }
+      
+      #welcome-section h1 {
+        font-size: 2.5rem;
+      }
+      
+      .welcome-text {
+        font-size: 1.4rem;
+      }
+      
+      .project-tile {
+        width: 100%;
+        max-width: 350px;
+      }
+      
+      .contact-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .nav-link {
+        margin: 5px 0;
+      }
+      
+      #welcome-section h1 {
+        font-size: 2rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+** end of styles.css **
+

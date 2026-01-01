@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+<style>body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+}
+
+td:nth-child(4), td:nth-child(5) {
+  width: 150px;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #a8e6cf, #56ab2f);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #ffe680, #ffb347);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #ff8b94, #ff3d4d);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid #3d8b37;
+  background-image: linear-gradient(to right, #56ab2f, #a8e6cf);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #d1a700;
+  background-image: linear-gradient(to right, #ffb347, #ffe680);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #c70039;
+  background-image: linear-gradient(to right, #ff3d4d, #ff8b94);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+span {
+  display: inline-block;
+}
+
+span[class^="rate"], span[class="status"] {
+  height: 20px;
+  width: 100px;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 3px;
+  height: 15px;
+  width: 15px;
+  background-color: #e0e0e0;
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(#56ab2f, #a8e6cf);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(#56ab2f, #a8e6cf);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(#56ab2f, #a8e6cf);
+}
+
+table tr {
+  border-bottom: 2px solid #ccc;
+}</style>
+</head>
+
+<body>
+<h1>Book Inventory</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="read">
+      <td>1984</td>
+      <td>George Orwell</td>
+      <td>Dystopian</td>
+      <td><span class="status">Read</span></td>
+      <td><span class="rate three"><span></span><span></span><span></span></span></td>
+    </tr>
+    <tr class="to-read">
+      <td>Atomic Habits</td>
+      <td>James Clear</td>
+      <td>Self-Help</td>
+      <td><span class="status">To Read</span></td>
+      <td><span class="rate one"><span></span><span></span><span></span></span></td>
+    </tr>
+    <tr class="in-progress">
+      <td>Sapiens</td>
+      <td>Yuval Noah Harari</td>
+      <td>History</td>
+      <td><span class="status">In Progress</span></td>
+      <td><span class="rate"><span></span><span></span><span></span></span></td>
+    </tr>
+    <tr class="read">
+      <td>The Great Gatsby</td>
+      <td>F. Scott Fitzgerald</td>
+      <td>Classic</td>
+      <td><span class="status">Read</span></td>
+      <td><span class="rate two"><span></span><span></span><span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+
+</html>

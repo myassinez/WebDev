@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+  background: #eaa6ea;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 170px;
+  height: 250px;
+  border: 1.6px solid black;
+  border-radius: 13px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.red {
+  color: red;
+}
+
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+
+
+.left {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.right {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+
+</head>
+
+<body>
+<main id="playing-cards">
+  <div class="card">
+    <div class="left">
+      <div>A</div>
+      <div>♠</div>
+    </div>
+
+    <div class="middle">
+      <div>♠</div>
+      <div>♠</div>
+      <div>♠</div>
+    </div>
+
+    <div class="right flipped">
+      <div>A</div>
+      <div>♠</div>
+    </div>
+  </div>
+
+  <div class="card red">
+    <div class="left">
+      <div>3</div>
+      <div>♥</div>
+    </div>
+
+    <div class="middle">
+      <div>♥</div>
+      <div>♥</div>
+      <div>♥</div>
+    </div>
+
+    <div class="right flipped">
+      <div>3</div>
+      <div>♥</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="left">
+      <div>2</div>
+      <div>♣</div>
+    </div>
+
+    <div class="middle">
+      <div>♣</div>
+      <div class="flipped">♣</div>
+    </div>
+
+    <div class="right flipped">
+      <div>2</div>
+      <div>♣</div>
+    </div>
+  </div>
+
+  <div class="card red">
+    <div class="left">
+      <div>5</div>
+      <div>♦</div>
+    </div>
+
+    <div class="middle">
+      <div>♦♦</div>
+      <div>♦</div>
+      <div>♦♦</div>
+    </div>
+
+    <div class="right flipped">
+      <div>5</div>
+      <div>♦</div>
+    </div>
+  </div>
+</main>
+
+</body>
+
+</html>
+

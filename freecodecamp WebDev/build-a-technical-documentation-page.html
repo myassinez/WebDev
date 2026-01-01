@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Documentation</title>
+
+    <style>
+      *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  background-color: white;
+  color: rgb(80, 80, 80);
+  font-family: Arial, sans-serif;
+}
+
+header{
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-link{
+  display: block;
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  font-size: 18px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover{
+  background-color: #f5f5f5;
+}
+
+#navbar{
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid grey;
+  overflow-y: auto;
+  background-color: white;
+}
+
+#navbar header{
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid grey;
+  color: black;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+#main-doc{
+  margin-left: 300px;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.main-section{
+  margin-bottom: 40px;
+}
+
+.main-section header{
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 10px;
+}
+
+p{
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+code{
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  border-left: 4px solid #007acc;
+  overflow-x: auto;
+}
+
+ul{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li{
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    /* position: relative; */
+    display: none;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid grey;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+    </style>
+
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+      <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+      <a class="nav-link" href="#CSS_Properties">CSS Properties</a>
+      <a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a>
+      <a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a>
+      <a class="nav-link" href="#CSS_Grid">CSS Grid</a>
+      <a class="nav-link" href="#CSS_Colors">CSS Colors</a>
+      <a class="nav-link" href="#CSS_Typography">CSS Typography</a>
+      <a class="nav-link" href="#CSS_Responsive_Design">CSS Responsive Design</a>
+      <a class="nav-link" href="#CSS_Transitions_and_Animations">CSS Transitions and Animations</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="CSS_Syntax">
+        <header>CSS Syntax</header>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of HTML documents.</p>
+        <p>The basic CSS syntax consists of selectors and declaration blocks. A selector points to the HTML element you want to style.</p>
+        <p>Each declaration consists of a property and a value. Multiple declarations are separated by semicolons.</p>
+        <code>selector { property: value; }</code>
+        <code>h1 { color: blue; }</code>
+        <code>p { font-size: 16px; }</code>
+        <ul>
+          <li>CSS rules start with a selector</li>
+          <li>Properties define the style characteristics</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Selectors">
+        <header>CSS Selectors</header>
+        <p>CSS selectors are patterns used to select the HTML elements you want to style.</p>
+        <p>They allow you to target specific elements based on various criteria.</p>
+        <p>Selectors can be combined to create more specific targeting.</p>
+        <code>element { }</code>
+        <code>.class { }</code>
+        <code>#id { }</code>
+        <ul>
+          <li>Element Selector: Targets HTML elements by tag name</li>
+          <li>Class Selector: Targets elements with specific class</li>
+          <li>ID Selector: Targets single element with specific ID</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Properties">
+        <header>CSS Properties</header>
+        <p>CSS properties define the visual characteristics of HTML elements.</p>
+        <p>Each property has a specific purpose in styling elements.</p>
+        <p>Properties work together to create the overall appearance.</p>
+        <code>color: red;</code>
+        <code>font-size: 16px;</code>
+        <code>margin: 20px;</code>
+        <ul>
+          <li>Color properties control colors</li>
+          <li>Text properties control typography</li>
+          <li>Layout properties control positioning</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Box_Model">
+        <header>CSS Box Model</header>
+        <p>The CSS box model describes the rectangular boxes generated for elements.</p>
+        <p>Each box has content, padding, borders, and margins.</p>
+        <p>Understanding the box model is crucial for layout design.</p>
+        <code>margin: 10px;</code>
+        <code>padding: 20px;</code>
+        <code>border: 1px solid black;</code>
+        <ul>
+          <li>Content: The actual content area</li>
+          <li>Padding: Space inside the border</li>
+          <li>Border: Line surrounding padding and content</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Flexbox">
+        <header>CSS Flexbox</header>
+        <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+        <p>It provides efficient space distribution and alignment within a container.</p>
+        <p>Flexbox simplifies many common layout challenges.</p>
+        <code>display: flex;</code>
+        <code>flex-direction: row;</code>
+        <code>justify-content: center;</code>
+        <ul>
+          <li>Container becomes a flex container</li>
+          <li>Items become flex items</li>
+          <li>Main axis and cross axis define direction</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Grid">
+        <header>CSS Grid</header>
+        <p>CSS Grid Layout is a two-dimensional layout system for the web.</p>
+        <p>It allows creation of complex layouts with rows and columns.</p>
+        <p>Grid makes responsive design more manageable.</p>
+        <code>display: grid;</code>
+        <code>grid-template-columns: 1fr 1fr;</code>
+        <code>grid-gap: 10px;</code>
+        <ul>
+          <li>Define grid container</li>
+          <li>Set up rows and columns</li>
+          <li>Place items in grid areas</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Colors">
+        <header>CSS Colors</header>
+        <p>CSS provides several ways to specify colors for elements.</p>
+        <p>Colors can be defined using various notation systems.</p>
+        <p>Understanding color values is important for consistent design.</p>
+        <code>color: red;</code>
+        <code>background-color: #FF5733;</code>
+        <code>border-color: rgb(255, 0, 0);</code>
+        <ul>
+          <li>Named colors are predefined</li>
+          <li>Hexadecimal uses hex values</li>
+          <li>RGB uses red, green, blue values</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Typography">
+        <header>CSS Typography</header>
+        <p>CSS provides extensive control over text appearance and layout.</p>
+        <p>Typography properties adjust font characteristics and spacing.</p>
+        <p>Good typography enhances readability and user experience.</p>
+        <code>font-family: Arial, sans-serif;</code>
+        <code>font-size: 1rem;</code>
+        <code>line-height: 1.5;</code>
+        <ul>
+          <li>Choose appropriate font families</li>
+          <li>Set readable font sizes</li>
+          <li>Adjust line spacing for readability</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Responsive_Design">
+        <header>CSS Responsive Design</header>
+        <p>Responsive design ensures web pages look good on all devices.</p>
+        <p>It adapts layout to different screen sizes and orientations.</p>
+        <p>Media queries are key to responsive design implementation.</p>
+        <code>@media (max-width: 768px) { }</code>
+        <code>width: 100%;</code>
+        <code>max-width: 1200px;</code>
+        <ul>
+          <li>Use media queries for breakpoints</li>
+          <li>Employ flexible units</li>
+          <li>Test on multiple devices</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Transitions_and_Animations">
+        <header>CSS Transitions and Animations</header>
+        <p>CSS allows creation of smooth transitions between property values.</p>
+        <p>Animations offer more control over timing and sequence.</p>
+        <p>These features enhance user interaction and engagement.</p>
+        <code>transition: all 0.3s ease;</code>
+        <code>animation: slide 2s infinite;</code>
+        <code>@keyframes slide { }</code>
+        <ul>
+          <li>Transitions for simple state changes</li>
+          <li>Animations for complex sequences</li>
+          <li>Keyframes define animation steps</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Painting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: #f2d2a9;
+  border: 5px solid #b35900;
+  margin: 40px auto;
+}
+
+/* all direct children must be absolute */
+#house > div {
+  position: absolute;
+}
+
+/* roof */
+#roof {
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 80px;
+  background-color: #8b0000;
+  border: 1px solid #b35900;
+  box-sizing: border-box;
+}
+
+#chimney {
+  top: -100px;
+  right: 60px;
+  width: 50px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: -1;
+}
+
+/* windows */
+#window-1,
+#window-2 {
+  width: 70px;
+  height: 70px;
+  background-color: yellow;
+  border: 3px solid #b35900;
+  top: 120px; /* below roof, high enough above door */
+}
+
+#window-1 {
+  left: 90px;
+}
+
+#window-2 {
+  right: 90px;
+}
+
+/* door */
+#door {
+  width: 90px;
+  height: 150px;
+  background-color: lightblue;
+  border: 3px solid #b35900;
+  bottom: -0px;
+  left: 205px;
+}
+
+#doorknob{
+    width: 20px;
+    height: 20px;
+    background-color: #b35900;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#welcome {
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    bottom: -47px;
+    left: 178px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    transform: skewX(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}</style>
+</head>
+<body>
+<div id="house">
+
+    <div id="chimney"></div>
+    <div id="roof"></div>
+    <div id="window-1"><div id="divider"></div></div>
+    <div id="window-2"><div id="divider"></div></div>
+    <div id="door">
+        <div id="doorknob"></div>
+    </div>
+<div id="welcome">WELCOME</div>
+</div>
+</body>
+</html>

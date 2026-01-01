@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title !</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Availability Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+:root{
+  --color0: white;
+  --color1: rgb(205, 254, 205);
+  --color2: #9CFC9C;
+  --color3: #51FB51;
+  --color4:  #05C705 ;
+  --color5:#037C03;
+  --solid-border: 1px solid black;
+  --dashed-border: 1px dashed black;
+}
+
+.available-0{
+  background-color: var(--color0);
+}
+.available-1{
+  background-color: var(--color1);
+}
+.available-2{
+  background-color: var(--color2);
+}
+.available-3{
+  background-color: var(--color3);
+}
+.available-4{
+  background-color: var(--color4);
+}
+.available-5{
+  background-color: var(--color5);
+}
+
+.sharp{
+  border-bottom : var(--solid-border)
+}
+
+.half{
+  border-bottom: bar(--dashed-border)
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+    </style>
 </head>
 <body>
-    <h1 id="h11">Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at, odit itaque explicabo soluta iusto quisquam dolorem corrupti, molestias excepturi eaque reiciendis recusandae necessitatibus corporis sed doloribus culpa qui porro.</p>
-    <script src="index.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="sharp"><th class="time">9AM</th><td class="available-3"></td><td class="available-0"></td><td class="available-5 "></td><td class="available-1 "></td></tr>
+            <tr><th class="time">10AM</th><td class="available-4 half"></td><td class="available-2 half"></td><td class="available-1 half"></td><td class="available-5 half"></td></tr>
+            <tr><th class="time">11AM</th><td class="available-0  "></td><td class="available-4"></td><td class="available-3"></td><td class="available-2"></td></tr>
+            <tr><th class="time">12PM</th><td class="available-5"></td><td class="available-1"></td><td class="available-0"></td><td class="available-4"></td></tr>
+            <tr><th class="time">1PM</th><td class="available-2"></td><td class="available-3"></td><td class="available-4"></td><td class="available-0"></td></tr>
+            <tr><th class="time">2PM</th><td class="available-1"></td><td class="available-5"></td><td class="available-2"></td><td class="available-3"></td></tr>
+            <tr><th class="time">3PM</th><td class="available-3"></td><td class="available-0"></td><td class="available-1"></td><td class="available-4"></td></tr>
+            <tr><th class="time">4PM</th><td class="available-4"></td><td class="available-2"></td><td class="available-5"></td><td class="available-1"></td></tr>
+            <tr><th class="time">5PM</th><td class="available-0"></td><td class="available-3"></td><td class="available-4"></td><td class="available-2"></td></tr>
+        </tbody>
+    </table>
 </body>
 </html>
